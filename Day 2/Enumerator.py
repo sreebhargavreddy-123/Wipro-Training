@@ -11,5 +11,4 @@ class color(Enum):
     BLUE=3
 
 print(color.RED.value)
-print(color.GREEN.value)
-print(color.BLUE.value)
+print(color.RED.name)
