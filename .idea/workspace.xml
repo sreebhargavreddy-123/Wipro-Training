@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f60d8bc4-ac4c-4b05-b4c4-0b02a3ff0441" name="Changes" comment="Day 2 1st q">
+      <change beforePath="$PROJECT_DIR$/Day 2/Classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/Classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/Decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/Decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/Descriptor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/Descriptor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/Enumerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/Enumerator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/FilesConcept/CSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/FilesConcept/CSV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/FilesConcept/Files.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/FilesConcept/Files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/FilesConcept/JSON.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/FilesConcept/JSON.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/FilesConcept/XML.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/FilesConcept/XML.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/FilesConcept/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/FilesConcept/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/FilesConcept/employee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/FilesConcept/employee.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/FilesConcept/f1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/FilesConcept/f1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/FilesConcept/student.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/FilesConcept/student.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/FilesConcept/students.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/FilesConcept/students.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/Functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/Functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/Generators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/Generators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/Iterator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/Iterator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/Lab/Q1/Q1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/Lab/Q1/Q1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/Lab/Q2/Q2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/Lab/Q2/Q2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/Lab/Q3/Q3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/Lab/Q3/Q3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/Lab/Q4/numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/Lab/Q4/numbers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/Lab/Q4/reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/Lab/Q4/reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/Lab/Q4/writer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/Lab/Q4/writer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day 2/Modules.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day 2,3/Modules.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sreebhargavreddy-123&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sreebhargavreddy-123/Wipro-Training.git&quot;,
+    &quot;accountId&quot;: &quot;c6d37a46-6ff2-44ba-82c1-fc736885f9b6&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="38CbRwWNCYhuF8AnoNf1lbM1wjr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.CSV.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Classes.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Decorators.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Descriptor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Enumerator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Files.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Functions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Generators.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Iterator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.JSON.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Modules.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Q1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Q2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Q3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Q4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.XML.executor&quot;: &quot;Run&quot;,
+    &quot;Python.reader.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/dbhar/Desktop/Wipro Training&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dbhar\Desktop\Wipro Training\Day 2" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.29346.142" />
+        <option value="bundled-python-sdk-f2b7a9f6281b-6e1f45a539f7-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.29346.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f60d8bc4-ac4c-4b05-b4c4-0b02a3ff0441" name="Changes" comment="" />
+      <created>1768306499490</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1768306499490</updated>
+      <workItem from="1768306501528" duration="846000" />
+      <workItem from="1768364172748" duration="8567000" />
+      <workItem from="1768373720340" duration="8178000" />
+      <workItem from="1768536606657" duration="343000" />
+      <workItem from="1768536991207" duration="578000" />
+    </task>
+    <task id="LOCAL-00001" summary="Day 2 1st q">
+      <option name="closed" value="true" />
+      <created>1768364685476</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1768364685477</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Day 2 1st q" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 2 1st q" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Wipro_Training$Modules.coverage" NAME="Modules Coverage Results" MODIFIED="1768366569878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 2" />
+    <SUITE FILE_PATH="coverage/Wipro_Training$JSON.coverage" NAME="JSON Coverage Results" MODIFIED="1768374842941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 2/FilesC" />
+    <SUITE FILE_PATH="coverage/Wipro_Training$Enumerator.coverage" NAME="Enumerator Coverage Results" MODIFIED="1768388046069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 2" />
+    <SUITE FILE_PATH="coverage/Wipro_Training$Q4.coverage" NAME="Q4 Coverage Results" MODIFIED="1768368322908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 2/Lab" />
+    <SUITE FILE_PATH="coverage/Wipro_Training$Generators.coverage" NAME="Generators Coverage Results" MODIFIED="1768370719993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 2" />
+    <SUITE FILE_PATH="coverage/Wipro_Training$Q3.coverage" NAME="Q3 Coverage Results" MODIFIED="1768387115002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 2/Lab/Q3" />
+    <SUITE FILE_PATH="coverage/Wipro_Training$Descriptor.coverage" NAME="Descriptor Coverage Results" MODIFIED="1768386944625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 2" />
+    <SUITE FILE_PATH="coverage/Wipro_Training$XML.coverage" NAME="XML Coverage Results" MODIFIED="1768383372355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 2/FilesConcept" />
+    <SUITE FILE_PATH="coverage/Wipro_Training$Classes.coverage" NAME="Classes Coverage Results" MODIFIED="1768367010577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 2" />
+    <SUITE FILE_PATH="coverage/Wipro_Training$Iterator.coverage" NAME="Iterator Coverage Results" MODIFIED="1768369745384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 2" />
+    <SUITE FILE_PATH="coverage/Wipro_Training$Files.coverage" NAME="Files Coverage Results" MODIFIED="1768374197024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 2" />
+    <SUITE FILE_PATH="coverage/Wipro_Training$reader.coverage" NAME="reader Coverage Results" MODIFIED="1768368502010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 2/Lab/Q4" />
+    <SUITE FILE_PATH="coverage/Wipro_Training$Functions.coverage" NAME="Functions Coverage Results" MODIFIED="1768365706960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 2" />
+    <SUITE FILE_PATH="coverage/Wipro_Training$Q2.coverage" NAME="Q2 Coverage Results" MODIFIED="1768387236531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 2/Lab/Q2" />
+    <SUITE FILE_PATH="coverage/Wipro_Training$Q1.coverage" NAME="Q1 Coverage Results" MODIFIED="1768383838276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 2/Lab/Q1" />
+    <SUITE FILE_PATH="coverage/Wipro_Training$Decorators.coverage" NAME="Decorators Coverage Results" MODIFIED="1768386016760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 2" />
+    <SUITE FILE_PATH="coverage/Wipro_Training$CSV.coverage" NAME="CSV Coverage Results" MODIFIED="1768375276219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Day 2/FilesC" />
+  </component>
+</project>
