@@ -1,0 +1,41 @@
+[
+    {
+        "id": "101",
+        "name": "Bhargav",
+        "department": "CSE",
+        "semester": 8,
+        "marks": [
+            100,
+            98,
+            80,
+            99,
+            91
+        ]
+    },
+    {
+        "id": "102",
+        "name": "Ram",
+        "department": "CCSE",
+        "semester": 8,
+        "marks": [
+            12,
+            53,
+            98,
+            72,
+            86
+        ]
+    },
+    {
+        "id": "103",
+        "name": "Raj",
+        "department": "CSE",
+        "semester": 8,
+        "marks": [
+            99,
+            66,
+            73,
+            89,
+            53
+        ]
+    }
+]
