@@ -54,6 +54,11 @@ print(re.search(r"^a.*c$","abnkkkkkknnc"))
 m=re.search(r"\w+(?=@)","test@gmail.com")
 print(m.group())
 
+print(re.search("python","Python",re.I))
+
+text4="one\ntwo\nthree"
+print(re.findall(r"^t\w+",text4,re.M))
+
 
 # ```python
 # import re
