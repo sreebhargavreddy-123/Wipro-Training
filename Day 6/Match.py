@@ -1,4 +1,6 @@
 import re
+from opcode import m
+
 text="pythonpowerful"
 result=re.match("python",text)
 if result:
@@ -43,6 +45,15 @@ for n in re.finditer(r"[a-z]", "a1 b1000, B33, C444"):
     print(n.group(), n.start(), n.end())
 for n in re.finditer(r"[A-Z]", "a1 b1000, B33, C444"):
     print(n.group(), n.start(), n.end())
+
+
+print(re.search(r"\d+","Age is 25"))
+
+print(re.search(r"^a.*c$","abnkkkkkknnc"))
+
+m=re.search(r"\w+(?=@)","test@gmail.com")
+print(m.group())
+
 
 # ```python
 # import re
