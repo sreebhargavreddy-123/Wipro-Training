@@ -2,4 +2,7 @@ import re
 
 text = "Python is fun"
 result = re.match("Python", text)
-print(result)
+if result:
+    print("match found")
+else:
+    print("no match found")
