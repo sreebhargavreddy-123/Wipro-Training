@@ -35,12 +35,13 @@ while True:
             marks = list(map(int, input("Marks (5): ").split()))
 
             students.append(Student(sid, name, dept, sem, marks))
-            section("STUDENT CREATED SUCCESSFULLY")
+            print("Student Created Successfully")
+            print("--------------------------------")
             print(f"ID        : {sid}")
             print(f"Name      : {name}")
             print(f"Department: {dept}")
             print(f"Semester  : {sem}")
-            success("Student added to system")
+            print("_" * 40)
 
 
         elif choice == "2":
@@ -50,61 +51,82 @@ while True:
             salary = int(input("Salary: "))
 
             faculty_list.append(Faculty(fid, name, dept, salary))
-            section("FACULTY CREATED SUCCESSFULLY")
+            print("Faculty Created Successfully")
+            print("--------------------------------")
             print(f"ID        : {fid}")
             print(f"Name      : {name}")
             print(f"Department: {dept}")
-            success("Faculty added to system")
+            print("_" * 40)
+
 
 
         elif choice == "3":
-            code = input("Course Code: ")
-            name = input("Course Name: ")
-            credits = int(input("Credits: "))
-
-            courses.append(Course(code, name, credits, faculty_list[0]))
-            section("COURSE ADDED SUCCESSFULLY")
-            print(f"Course Code : {code}")
-            print(f"Course Name : {name}")
-            print(f"Credits     : {credits}")
-            print(f"Faculty     : {faculty_list[0].name}")
-            success("Course assigned successfully")
+            code = input("Course Code : ")
+            name = input("Course Name : ")
+            credits = int(input("Credits     : "))
+            fac_id = input("Faculty ID  : ")
+            faculty_obj = None
+            for f in faculty_list:
+                if f.id == fac_id:
+                    faculty_obj = f
+                    break
+            if faculty_obj is None:
+                print("Error: Faculty ID not found")
+            else:
+                course = Course(code, name, credits, faculty_obj)
+                courses.append(course)
+                print("Course Added Successfully")
+                print("--------------------------------")
+                print(f"Course Code : {course.code}")
+                print(f"Course Name : {course.name}")
+                print(f"Credits     : {course.credits}")
+                print(f"Faculty     : {course.faculty.name}")
+                print("_" * 40)
 
 
 
 
         elif choice == "4":
-            section("STUDENT PERFORMANCE REPORT (ALL STUDENTS)")
             if not students:
-                error("No students found. Please add students first.")
+                print("Error: No students found")
             else:
-                for idx, student in enumerate(students, start=1):
-                    print(f"\n📘 Student {idx}")
-                    print("-" * 30)
+                print("Student Performance Report")
+                print("--------------------------------")
+                for student in students:
                     avg, grade = student.calculate_performance()
-                    print(f"Student ID   : {student.id}")
                     print(f"Student Name : {student.name}")
-                    print(f"Department   : {student.department}")
-                    print(f"Semester     : {student.semester}")
-                    print("Marks        :", ", ".join(map(str, student.marks)))
-                    print(f"Average      : {avg:.2f}")
+                    print(f"Marks        : {student.marks}")
+                    print(f"Average      : {avg:.1f}")
                     print(f"Grade        : {grade}")
+                    print("_" * 40)
+
+
+
 
 
         elif choice == "5":
-            section("STUDENT PERFORMANCE COMPARISON")
-            s1 = students[0]
-            s2 = students[1]
-            avg1, _ = s1.calculate_performance()
-            avg2, _ = s2.calculate_performance()
-            print(f"Student 1 : {s1.name}")
-            print(f"Average  : {avg1:.2f}\n")
-            print(f"Student 2 : {s2.name}")
-            print(f"Average  : {avg2:.2f}\n")
-            if s1 > s2:
-                print(f"Result   : {s1.name} performed better")
+            if len(students) < 2:
+                print("Error: At least two students are required")
             else:
-                print(f"Result   : {s2.name} performed better")
+                print("Compare Two Students (> operator)")
+                print("Comparing Students Performance")
+                print("--------------------------------")
+                for s in students:
+                    print(f"{s.id} - {s.name}")
+                id1 = input("Enter Student ID 1: ")
+                id2 = input("Enter Student ID 2: ")
+                s1 = s2 = None
+                for s in students:
+                    if s.id == id1:
+                        s1 = s
+                    if s.id == id2:
+                        s2 = s
+                if s1 is None or s2 is None:
+                    print("Error: Invalid Student ID")
+                else:
+                    print(f"{s1.name} > {s2.name} : {s1 > s2}")
+                    print("_" * 40)
+
 
 
 
@@ -115,17 +137,26 @@ while True:
             success("All reports generated successfully")
 
 
+
         elif choice == "7":
-            for record in student_generator(students):
-                section("STUDENT RECORDS")
+            if not students:
+                print("Error: No students found")
+            else:
+                print("Student Record Generator")
+                print("Fetching Student Records...")
+                print("--------------------------------")
                 for record in student_generator(students):
-                    print("📘", record)
+                    print(record)
+                print("_" * 40)
+
+
 
 
         elif choice == "8":
-            title("THANK YOU")
-            print("🙏 Thank you for using Smart University Management System")
+            print("Thank you for using Smart University Management System")
+            print("_" * 40)
             break
+
 
     except Exception as e:
         print(str(e))

@@ -5,24 +5,24 @@
         "department": "CSE",
         "semester": 8,
         "marks": [
-            100,
-            98,
-            80,
             99,
-            91
+            95,
+            83,
+            81,
+            72
         ]
     },
     {
         "id": "102",
         "name": "Ram",
-        "department": "CCSE",
+        "department": "CSE",
         "semester": 8,
         "marks": [
-            12,
-            53,
-            98,
-            72,
-            86
+            100,
+            92,
+            97,
+            89,
+            85
         ]
     },
     {
@@ -31,11 +31,11 @@
         "department": "CSE",
         "semester": 8,
         "marks": [
-            99,
+            34,
+            100,
+            97,
             66,
-            73,
-            89,
-            53
+            81
         ]
     }
 ]
