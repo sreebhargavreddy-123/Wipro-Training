@@ -137,7 +137,6 @@ while True:
             success("All reports generated successfully")
 
 
-
         elif choice == "7":
             if not students:
                 print("Error: No students found")

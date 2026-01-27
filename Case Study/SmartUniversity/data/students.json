@@ -1,41 +1,28 @@
 [
     {
-        "id": "101",
+        "id": "001",
         "name": "Bhargav",
         "department": "CSE",
         "semester": 8,
         "marks": [
             99,
-            95,
-            83,
-            81,
-            72
+            98,
+            97,
+            65,
+            78
         ]
     },
     {
-        "id": "102",
-        "name": "Ram",
+        "id": "002",
+        "name": "Ravi ",
         "department": "CSE",
         "semester": 8,
         "marks": [
-            100,
-            92,
-            97,
-            89,
-            85
-        ]
-    },
-    {
-        "id": "103",
-        "name": "Raj",
-        "department": "CSE",
-        "semester": 8,
-        "marks": [
-            34,
-            100,
-            97,
-            66,
-            81
+            87,
+            87,
+            86,
+            55,
+            78
         ]
     }
 ]
