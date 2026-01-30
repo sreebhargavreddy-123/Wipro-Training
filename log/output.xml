@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.5 on win32)" generated="2026-01-30T12:07:10.650180" rpa="false" schemaversion="5">
+<suite id="s1" name="test5 DDExcel" source="C:\Users\dbhar\Desktop\Wipro Training\Day 13\test5_DD\test5_DDExcel.robot">
+<kw name="Open OrangeHRM" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-30T12:07:12.899570" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-30T12:07:12.899570" elapsed="6.030685"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-30T12:07:18.931265" elapsed="0.039268"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-30T12:07:18.970533" elapsed="0.681851"/>
+</kw>
+<status status="PASS" start="2026-01-30T12:07:12.898050" elapsed="6.754334"/>
+</kw>
+<test id="s1-t1" name="Login Using Excel Data" line="30">
+<status status="FAIL" start="2026-01-30T12:07:19.652384" elapsed="0.003025">Test cannot be empty.</status>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-01-30T12:07:19.656408" elapsed="6.293520"/>
+</kw>
+<status status="FAIL" start="2026-01-30T12:07:10.685690" elapsed="15.264238"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="test5 DDExcel" id="s1" pass="0" fail="1" skip="0">test5 DDExcel</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-01-30T12:07:12.888930" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\dbhar\Desktop\Wipro Training\Day 13\test5_DD\test5_DDExcel.robot", line 0</msg>
+<msg time="2026-01-30T12:07:12.891451" level="ERROR">In source file:
+  File "C:\Users\dbhar\Desktop\Wipro Training\Day 13\test5_DD\testdata.xlsx", line 0</msg>
+<msg time="2026-01-30T12:07:12.896055" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: ValueError: Unassigned requiered argument detected: ${username}.</msg>
+</errors>
+</robot>

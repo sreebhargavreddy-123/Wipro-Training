@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.5 on win32)" generated="2026-01-30T13:05:19.989369" rpa="false" schemaversion="5">
+<suite id="s1" name="test5 DDExcel" source="C:\Users\dbhar\Desktop\Wipro Training\Day 13\test5_DD\test5_DDExcel.robot">
+<kw name="Open Application" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-30T13:05:21.565297" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-30T13:05:21.564275" elapsed="5.495134"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-30T13:05:27.060423" elapsed="0.032610"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-30T13:05:27.093542" elapsed="0.683450"/>
+</kw>
+<status status="PASS" start="2026-01-30T13:05:21.562749" elapsed="6.214243"/>
+</kw>
+<test id="s1-t1" name="TC_Login_With_Excel" line="63">
+<kw name="Login Using Excel Data">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-30T13:05:27.779507" elapsed="0.026638"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-30T13:05:27.806145" elapsed="0.073356"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-30T13:05:27.880692" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-30T13:05:27.879501" elapsed="0.131995"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>name=password</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-30T13:05:28.013007" elapsed="0.063449"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-30T13:05:28.076456" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-30T13:05:28.076456" elapsed="0.160032"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-01-30T13:05:28.237518" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-30T13:05:28.237518" elapsed="0.150316"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-01-30T13:05:33.390841" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-01-30T13:05:28.389546" elapsed="5.001295"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-01-30T13:05:33.411696" level="INFO">Current page contains element 'xpath=//header'.</msg>
+<arg>xpath=//header</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-01-30T13:05:33.391910" elapsed="0.019786"/>
+</kw>
+<msg time="2026-01-30T13:05:33.411696" level="INFO">${success} = True</msg>
+<var>${success}</var>
+<arg>Page Should Contain Element</arg>
+<arg>xpath=//header</arg>
+<doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-30T13:05:33.390841" elapsed="0.020855"/>
+</kw>
+<if>
+<branch type="IF" condition="${success}">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-30T13:05:33.413189" level="INFO">✅ Valid login: Admin</msg>
+<arg>✅ Valid login: ${username}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-30T13:05:33.412676" elapsed="0.000513"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-01-30T13:05:33.661962" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-01-30T13:05:33.413189" elapsed="0.248773"/>
+</kw>
+<kw name="Slow Logout">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//header//span[contains(@class,'oxd-userdropdown-tab')]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-30T13:05:33.662974" elapsed="0.032206"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-01-30T13:05:36.696696" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-01-30T13:05:33.695180" elapsed="3.001516"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-30T13:05:36.697711" level="INFO">Clicking element 'xpath=//header//span[contains(@class,'oxd-userdropdown-tab')]'.</msg>
+<arg>xpath=//header//span[contains(@class,'oxd-userdropdown-tab')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-30T13:05:36.696696" elapsed="0.134430"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//a[text()='Logout']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-30T13:05:36.831126" elapsed="0.055074"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-01-30T13:05:38.887778" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-01-30T13:05:36.887192" elapsed="2.000586"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2026-01-30T13:05:38.887778" level="INFO">Clicking link 'Logout'.</msg>
+<arg>Logout</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-30T13:05:38.887778" elapsed="3.816994"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-30T13:05:42.705407" elapsed="0.895817"/>
+</kw>
+<status status="PASS" start="2026-01-30T13:05:33.661962" elapsed="9.940784"/>
+</kw>
+<status status="PASS" start="2026-01-30T13:05:33.412676" elapsed="10.190070"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>❌ Invalid login: ${username}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-01-30T13:05:43.603772" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Invalid credentials</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-01-30T13:05:43.604288" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2026-01-30T13:05:43.604808" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-30T13:05:43.602746" elapsed="0.002062"/>
+</branch>
+<status status="PASS" start="2026-01-30T13:05:33.412676" elapsed="10.192132"/>
+</if>
+<arg>username=Admin</arg>
+<arg>password=admin123</arg>
+<status status="PASS" start="2026-01-30T13:05:27.779507" elapsed="15.825301"/>
+</kw>
+<status status="PASS" start="2026-01-30T13:05:27.776992" elapsed="15.830198"/>
+</test>
+<test id="s1-t2" name="TC_Login_With_Excel" line="63">
+<kw name="Login Using Excel Data">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-30T13:05:43.615449" elapsed="0.046030"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-30T13:05:43.663012" elapsed="0.050137"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-30T13:05:43.714663" level="INFO">Typing text 'Ravi' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-30T13:05:43.714663" elapsed="0.102108"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>name=password</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-30T13:05:43.818056" elapsed="0.038587"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-30T13:05:43.857639" level="INFO">Typing text 'admin124' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-30T13:05:43.856643" elapsed="0.119542"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-01-30T13:05:43.977184" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-30T13:05:43.977184" elapsed="0.146943"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-01-30T13:05:49.125844" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-01-30T13:05:44.124127" elapsed="5.001717"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-01-30T13:05:49.275931" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-30T13:05:49.275931" level="FAIL">Page should have contained element 'xpath=//header' but did not.</msg>
+<arg>xpath=//header</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2026-01-30T13:05:49.128014" elapsed="0.153752">Page should have contained element 'xpath=//header' but did not.</status>
+</kw>
+<msg time="2026-01-30T13:05:49.281766" level="INFO">${success} = False</msg>
+<var>${success}</var>
+<arg>Page Should Contain Element</arg>
+<arg>xpath=//header</arg>
+<doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-30T13:05:49.125844" elapsed="0.155922"/>
+</kw>
+<if>
+<branch type="IF" condition="${success}">
+<kw name="Log" owner="BuiltIn">
+<arg>✅ Valid login: ${username}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-01-30T13:05:49.281766" elapsed="0.001007"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2026-01-30T13:05:49.282773" elapsed="0.000000"/>
+</kw>
+<kw name="Slow Logout">
+<status status="NOT RUN" start="2026-01-30T13:05:49.283297" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-30T13:05:49.281766" elapsed="0.001531"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-30T13:05:49.284815" level="INFO">❌ Invalid login: Ravi</msg>
+<arg>❌ Invalid login: ${username}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-30T13:05:49.283297" elapsed="0.001518"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-30T13:05:49.304073" level="INFO">Current page contains text 'Invalid credentials'.</msg>
+<arg>Invalid credentials</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-01-30T13:05:49.284815" elapsed="0.019258"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-01-30T13:05:49.410603" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-01-30T13:05:49.304588" elapsed="0.106015"/>
+</kw>
+<status status="PASS" start="2026-01-30T13:05:49.283297" elapsed="0.127306"/>
+</branch>
+<status status="PASS" start="2026-01-30T13:05:49.281766" elapsed="0.130348"/>
+</if>
+<arg>username=Ravi</arg>
+<arg>password=admin124</arg>
+<status status="PASS" start="2026-01-30T13:05:43.613927" elapsed="5.798187"/>
+</kw>
+<status status="PASS" start="2026-01-30T13:05:43.610141" elapsed="5.802548"/>
+</test>
+<test id="s1-t3" name="TC_Login_With_Excel" line="63">
+<kw name="Login Using Excel Data">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-30T13:05:49.415922" elapsed="0.032275"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-30T13:05:49.448197" elapsed="0.058770"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-30T13:05:49.508509" level="INFO">Typing text 'Ram' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-30T13:05:49.506967" elapsed="0.083540"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>name=password</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-30T13:05:49.590507" elapsed="0.047602"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-30T13:05:49.638109" level="INFO">Typing text 'admin125' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-30T13:05:49.638109" elapsed="0.156584"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-01-30T13:05:49.795804" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-30T13:05:49.795804" elapsed="0.124598"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-01-30T13:05:54.921592" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-01-30T13:05:49.920402" elapsed="5.001190"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-01-30T13:05:55.054840" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-30T13:05:55.054840" level="FAIL">Page should have contained element 'xpath=//header' but did not.</msg>
+<arg>xpath=//header</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2026-01-30T13:05:54.922096" elapsed="0.134015">Page should have contained element 'xpath=//header' but did not.</status>
+</kw>
+<msg time="2026-01-30T13:05:55.056111" level="INFO">${success} = False</msg>
+<var>${success}</var>
+<arg>Page Should Contain Element</arg>
+<arg>xpath=//header</arg>
+<doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-01-30T13:05:54.922096" elapsed="0.134015"/>
+</kw>
+<if>
+<branch type="IF" condition="${success}">
+<kw name="Log" owner="BuiltIn">
+<arg>✅ Valid login: ${username}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-01-30T13:05:55.057112" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2026-01-30T13:05:55.057112" elapsed="0.000000"/>
+</kw>
+<kw name="Slow Logout">
+<status status="NOT RUN" start="2026-01-30T13:05:55.057112" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2026-01-30T13:05:55.056111" elapsed="0.001001"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-30T13:05:55.057112" level="INFO">❌ Invalid login: Ram</msg>
+<arg>❌ Invalid login: ${username}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-30T13:05:55.057112" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-30T13:05:55.074960" level="INFO">Current page contains text 'Invalid credentials'.</msg>
+<arg>Invalid credentials</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-01-30T13:05:55.058616" elapsed="0.016344"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-01-30T13:05:55.195861" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-01-30T13:05:55.074960" elapsed="0.120901"/>
+</kw>
+<status status="PASS" start="2026-01-30T13:05:55.057112" elapsed="0.138749"/>
+</branch>
+<status status="PASS" start="2026-01-30T13:05:55.056111" elapsed="0.139750"/>
+</if>
+<arg>username=Ram</arg>
+<arg>password=admin125</arg>
+<status status="PASS" start="2026-01-30T13:05:49.415922" elapsed="5.779939"/>
+</kw>
+<status status="PASS" start="2026-01-30T13:05:49.412689" elapsed="5.784172"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-01-30T13:05:55.197860" elapsed="2.320779"/>
+</kw>
+<status status="PASS" start="2026-01-30T13:05:19.991389" elapsed="37.527250"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="test5 DDExcel" id="s1" pass="3" fail="0" skip="0">test5 DDExcel</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-01-30T13:05:43.610141" level="WARN">Multiple tests with name 'TC_Login_With_Excel' executed in suite 'test5 DDExcel'.</msg>
+<msg time="2026-01-30T13:05:49.413703" level="WARN">Multiple tests with name 'TC_Login_With_Excel' executed in suite 'test5 DDExcel'.</msg>
+</errors>
+</robot>
