@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.5 on win32)" generated="2026-02-02T11:55:54.694210" rpa="false" schemaversion="5">
+<suite id="s1" name="Flaskapi" source="C:\Users\dbhar\Desktop\Wipro Training\Day 14\flaskapi\flaskapi.robot">
+<test id="s1-t1" name="Verify Get_User" line="9">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2026-02-02T11:55:54.921486" level="INFO">Creating Session using : alias=mysession, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>mysession</arg>
+<arg>${baseurl}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2026-02-02T11:55:54.921486" elapsed="0.000000"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2026-02-02T11:55:54.927514" level="INFO">GET Request : url=http://127.0.0.1:5000/users 
+ path_url=/users 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2026-02-02T11:55:54.927514" level="INFO">GET Response : url=http://127.0.0.1:5000/users 
+ status=200, reason=OK 
+ headers={'Server': 'Werkzeug/3.1.5 Python/3.14.2', 'Date': 'Mon, 02 Feb 2026 06:25:54 GMT', 'Content-Type': 'application/json', 'Content-Length': '85', 'Connection': 'close'} 
+ body=[
+  {
+    "id": 1,
+    "name": "Raja"
+  },
+  {
+    "id": 2,
+    "name": "Rama"
+  }
+]
+ 
+ </msg>
+<msg time="2026-02-02T11:55:54.927514" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>/users</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-02-02T11:55:54.922631" elapsed="0.004883"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2026-02-02T11:55:54.928470" elapsed="0.000000"/>
+</kw>
+<kw name="To Json" owner="RequestsLibrary">
+<msg time="2026-02-02T11:55:54.928470" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg time="2026-02-02T11:55:54.929462" level="INFO">To JSON using : content=[
+  {
+    "id": 1,
+    "name": "Raja"
+  },
+  {
+    "id": 2,
+    "name": "Rama"
+  }
+]
+ </msg>
+<msg time="2026-02-02T11:55:54.929462" level="INFO">To JSON using : pretty_print=False </msg>
+<msg time="2026-02-02T11:55:54.929462" level="INFO">${res_jon} = [{'id': 1, 'name': 'Raja'}, {'id': 2, 'name': 'Rama'}]</msg>
+<var>${res_jon}</var>
+<arg>${response.content}</arg>
+<doc>*DEPRECATED* Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</doc>
+<status status="PASS" start="2026-02-02T11:55:54.928470" elapsed="0.000992"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T11:55:54.930451" level="INFO">[{'id': 1, 'name': 'Raja'}, {'id': 2, 'name': 'Rama'}]=</msg>
+<arg>${res_jon}=</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T11:55:54.929462" elapsed="0.000989"/>
+</kw>
+<status status="PASS" start="2026-02-02T11:55:54.920170" elapsed="0.010281"/>
+</test>
+<status status="PASS" start="2026-02-02T11:55:54.696146" elapsed="0.235303"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Flaskapi" id="s1" pass="1" fail="0" skip="0">Flaskapi</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-02T11:55:54.928470" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+</errors>
+</robot>
