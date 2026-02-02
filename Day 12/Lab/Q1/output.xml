@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.12.5 on win32)" generated="2026-01-29T16:02:49.215027" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.12.5 on win32)" generated="2026-02-01T19:39:52.755383" rpa="false" schemaversion="5">
 <suite id="s1" name="Q1" source="C:\Users\dbhar\Desktop\Wipro Training\Day 12\Lab\Q1\Q1.robot">
 <test id="s1-t1" name="Log Scalar Variable" line="9">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-29T16:02:49.256530" level="INFO">Hello, Robot Framework!</msg>
+<msg time="2026-02-01T19:39:52.793965" level="INFO">Hello, Robot Framework!</msg>
 <arg>${GREETING}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-29T16:02:49.254688" elapsed="0.001842"/>
+<status status="PASS" start="2026-02-01T19:39:52.788961" elapsed="0.005004"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${GREETING}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-01-29T16:02:49.256530" elapsed="0.001040"/>
+<status status="PASS" start="2026-02-01T19:39:52.794959" elapsed="0.000997"/>
 </kw>
-<status status="PASS" start="2026-01-29T16:02:49.254688" elapsed="0.002882"/>
+<status status="PASS" start="2026-02-01T19:39:52.788961" elapsed="0.006995"/>
 </test>
 <test id="s1-t2" name="Log List Variable" line="13">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-01-29T16:02:49.258617" level="INFO">List contains: ['Apple', 'Banana', 'Orange']</msg>
+<msg time="2026-02-01T19:39:52.797956" level="INFO">List contains: ['Apple', 'Banana', 'Orange']</msg>
 <arg>List contains: @{ITEMS}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-29T16:02:49.258617" elapsed="0.000000"/>
+<status status="PASS" start="2026-02-01T19:39:52.796957" elapsed="0.000999"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>First item is: ${ITEMS}[0]</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-01-29T16:02:49.259578" elapsed="0.000000"/>
+<status status="PASS" start="2026-02-01T19:39:52.797956" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2026-01-29T16:02:49.258617" elapsed="0.001966"/>
+<status status="PASS" start="2026-02-01T19:39:52.796957" elapsed="0.000999"/>
 </test>
-<status status="PASS" start="2026-01-29T16:02:49.217081" elapsed="0.043502"/>
+<status status="PASS" start="2026-02-01T19:39:52.756687" elapsed="0.043272"/>
 </suite>
 <statistics>
 <total>
