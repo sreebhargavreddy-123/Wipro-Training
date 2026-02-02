@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.5 on win32)" generated="2026-02-02T14:43:19.502747" rpa="false" schemaversion="5">
+<suite id="s1" name="Patient" source="C:\Users\dbhar\Desktop\Wipro Training\Case Study\HospitalManagementSystem\robot\patient.robot">
+<test id="s1-t1" name="Register Multiple Patients (Data Driven)" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-02T14:43:19.889345" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:5000/register'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-02T14:43:19.889345" elapsed="2.159289"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-02T14:43:22.049149" elapsed="0.055363"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-02T14:43:22.106540" level="INFO">Typing text 'Ravi' into text field 'name=name'.</msg>
+<arg>name=name</arg>
+<arg>${NAMES}[${i}]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T14:43:22.106540" elapsed="0.297598"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-02T14:43:22.404138" level="INFO">Typing text '30' into text field 'name=age'.</msg>
+<arg>name=age</arg>
+<arg>${AGES}[${i}]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T14:43:22.404138" elapsed="0.166248"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-02T14:43:22.571385" level="INFO">Clicking button 'xpath=//input[@type='submit']'.</msg>
+<arg>xpath=//input[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T14:43:22.571385" elapsed="0.184601"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-02T14:43:23.756645" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-02T14:43:22.756496" elapsed="1.000149"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-02-02T14:43:23.756645" level="INFO">Opening url 'http://127.0.0.1:5000/register'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-02-02T14:43:23.756645" elapsed="0.034154"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2026-02-02T14:43:22.106028" elapsed="1.684771"/>
+</iter>
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-02T14:43:23.791812" level="INFO">Typing text 'Sita' into text field 'name=name'.</msg>
+<arg>name=name</arg>
+<arg>${NAMES}[${i}]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T14:43:23.791812" elapsed="0.144068"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-02T14:43:23.936928" level="INFO">Typing text '25' into text field 'name=age'.</msg>
+<arg>name=age</arg>
+<arg>${AGES}[${i}]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T14:43:23.935880" elapsed="0.143685"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-02T14:43:24.079565" level="INFO">Clicking button 'xpath=//input[@type='submit']'.</msg>
+<arg>xpath=//input[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T14:43:24.079565" elapsed="0.157134"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-02T14:43:25.238434" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-02T14:43:24.236699" elapsed="1.001735"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-02-02T14:43:25.238434" level="INFO">Opening url 'http://127.0.0.1:5000/register'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-02-02T14:43:25.238434" elapsed="0.053085"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2026-02-02T14:43:23.790799" elapsed="1.500720"/>
+</iter>
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-02T14:43:25.292573" level="INFO">Typing text 'Aman' into text field 'name=name'.</msg>
+<arg>name=name</arg>
+<arg>${NAMES}[${i}]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T14:43:25.291519" elapsed="0.128775"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-02T14:43:25.421622" level="INFO">Typing text '40' into text field 'name=age'.</msg>
+<arg>name=age</arg>
+<arg>${AGES}[${i}]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T14:43:25.420294" elapsed="0.118672"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-02T14:43:25.540445" level="INFO">Clicking button 'xpath=//input[@type='submit']'.</msg>
+<arg>xpath=//input[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T14:43:25.538966" elapsed="0.124430"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-02T14:43:26.768100" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-02T14:43:25.663396" elapsed="1.105212"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-02-02T14:43:26.770618" level="INFO">Opening url 'http://127.0.0.1:5000/register'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-02-02T14:43:26.769623" elapsed="0.026922"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2026-02-02T14:43:25.291519" elapsed="1.506034"/>
+</iter>
+<var>${i}</var>
+<value>0</value>
+<value>3</value>
+<status status="PASS" start="2026-02-02T14:43:22.104512" elapsed="4.693041"/>
+</for>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-02T14:43:26.797553" elapsed="2.393630"/>
+</kw>
+<status status="PASS" start="2026-02-02T14:43:19.887702" elapsed="9.304484"/>
+</test>
+<status status="PASS" start="2026-02-02T14:43:19.504740" elapsed="9.689441"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Patient" id="s1" pass="1" fail="0" skip="0">Patient</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

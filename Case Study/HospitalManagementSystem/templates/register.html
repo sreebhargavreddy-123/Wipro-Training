@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Patient Registration</h2>
+
+<form action="/api/patients" method="post">
+
+    Name:
+    <input type="text" name="name"><br><br>
+
+    Age:
+    <input type="number" name="age"><br><br>
+
+    Gender:
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <br><br>
+
+    Disease:
+    <select name="disease">
+        <option value="Flu">Flu</option>
+        <option value="Covid">Covid</option>
+    </select>
+    <br><br>
+
+    <input type="submit" value="Register">
+
+</form>
+
+</body>
+</html>

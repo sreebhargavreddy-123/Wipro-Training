@@ -1,0 +1,9 @@
+flask
+requests
+pytest
+pytest-html
+robotframework
+robotframework-seleniumlibrary
+selenium
+webdriver-manager
+beautifulsoup4

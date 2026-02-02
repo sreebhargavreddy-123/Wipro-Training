@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.5 on win32)" generated="2026-02-02T16:42:49.761760" rpa="false" schemaversion="5">
+<suite id="s1" name="Q1" source="C:\Users\dbhar\Desktop\Wipro Training\Day 14\Lab\Q1\Q1.robot">
+<kw name="Suite Level Setup" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T16:42:49.951140" level="INFO">===== Suite Setup Started =====</msg>
+<arg>===== Suite Setup Started =====</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T16:42:49.951140" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-02-02T16:42:49.951140" elapsed="0.000000"/>
+</kw>
+<test id="s1-t1" name="Verify Google Title" line="31">
+<kw name="Test Level Setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-02T16:42:49.952150" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-02T16:42:49.952150" elapsed="2.181734"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-02T16:42:52.133884" elapsed="0.065117"/>
+</kw>
+<status status="PASS" start="2026-02-02T16:42:49.952150" elapsed="2.246851"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-02-02T16:42:52.216733" level="INFO">Page title is 'Google'.</msg>
+<arg>Google</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-02-02T16:42:52.199001" elapsed="0.017732"/>
+</kw>
+<kw name="Test Level Teardown" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-02T16:42:52.217731" elapsed="2.153246"/>
+</kw>
+<status status="PASS" start="2026-02-02T16:42:52.217731" elapsed="2.153246"/>
+</kw>
+<tag>regression</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2026-02-02T16:42:49.952150" elapsed="4.419833"/>
+</test>
+<test id="s1-t2" name="Verify Google Search Box" line="35">
+<kw name="Test Level Setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-02T16:42:54.375032" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-02T16:42:54.375032" elapsed="2.054599"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-02T16:42:56.430631" elapsed="0.052002"/>
+</kw>
+<status status="PASS" start="2026-02-02T16:42:54.374518" elapsed="2.109116"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-02-02T16:42:56.520188" level="INFO">Current page contains element 'name=q'.</msg>
+<arg>name=q</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-02-02T16:42:56.483634" elapsed="0.036554"/>
+</kw>
+<kw name="Test Level Teardown" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-02T16:42:56.520188" elapsed="2.132046"/>
+</kw>
+<status status="PASS" start="2026-02-02T16:42:56.520188" elapsed="2.132046"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" start="2026-02-02T16:42:54.373499" elapsed="4.280295"/>
+</test>
+<kw name="Suite Level Teardown" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T16:42:58.656503" level="INFO">===== Suite Teardown Completed =====</msg>
+<arg>===== Suite Teardown Completed =====</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T16:42:58.656503" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-02-02T16:42:58.655393" elapsed="0.001110"/>
+</kw>
+<status status="PASS" start="2026-02-02T16:42:49.763500" elapsed="8.893003"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">regression</stat>
+<stat pass="2" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat name="Q1" id="s1" pass="2" fail="0" skip="0">Q1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

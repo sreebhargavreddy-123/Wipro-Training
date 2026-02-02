@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.5 on win32)" generated="2026-02-02T16:36:51.704089" rpa="false" schemaversion="5">
+<suite id="s1" name="Q2" source="C:\Users\dbhar\Desktop\Wipro Training\Day 14\Lab\Q2\Q2.robot">
+<kw name="Open Browser To Application" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-02T16:36:51.898602" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-02T16:36:51.897052" elapsed="4.656305"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-02T16:36:56.553357" elapsed="0.038182"/>
+</kw>
+<status status="PASS" start="2026-02-02T16:36:51.897052" elapsed="4.694487"/>
+</kw>
+<test id="s1-t1" name="Verify Browser Automation With BuiltIn Keywords" line="22">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-02T16:36:56.593542" level="INFO">Typing text 'John' into text field 'id=name'.</msg>
+<arg>id=name</arg>
+<arg>${NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T16:36:56.592539" elapsed="0.145498"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-02T16:36:56.739034" level="INFO">Clicking element 'id=male'.</msg>
+<arg>id=${GENDER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T16:36:56.739034" elapsed="0.090400"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-02T16:36:56.830434" level="INFO">Clicking element 'id=sunday'.</msg>
+<arg>id=${DAY}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T16:36:56.830434" elapsed="0.068675"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-02-02T16:36:56.900093" level="INFO">Selecting options from selection list 'id=country' by label India.</msg>
+<arg>id=country</arg>
+<arg>${COUNTRY}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-02-02T16:36:56.900093" elapsed="0.098687"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-02T16:36:59.000089" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-02T16:36:56.998780" elapsed="2.001309"/>
+</kw>
+<kw name="Get Selected List Label" owner="SeleniumLibrary">
+<msg time="2026-02-02T16:36:59.158927" level="INFO">${selected} = India</msg>
+<var>${selected}</var>
+<arg>id=country</arg>
+<doc>Returns the label of selected option from selection list ``locator``.</doc>
+<status status="PASS" start="2026-02-02T16:36:59.000089" elapsed="0.159837"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${selected}</arg>
+<arg>${EXPECTED}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-02-02T16:36:59.159926" elapsed="0.001506"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T16:36:59.162442" level="INFO">Form filled successfully</msg>
+<arg>Form filled successfully</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T16:36:59.162442" elapsed="0.000000"/>
+</kw>
+<arg>'${selected}' == 'India'</arg>
+<arg>Log</arg>
+<arg>Form filled successfully</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-02-02T16:36:59.161432" elapsed="0.001010"/>
+</kw>
+<status status="PASS" start="2026-02-02T16:36:56.591539" elapsed="2.571903"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-02T16:36:59.163981" elapsed="2.187825"/>
+</kw>
+<status status="PASS" start="2026-02-02T16:36:51.704089" elapsed="9.647717"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Q2" id="s1" pass="1" fail="0" skip="0">Q2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
