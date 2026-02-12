@@ -23,6 +23,10 @@ users = []
 user_counter = 1
 
 
+ratings = []
+rating_counter = 1
+
+
 # -------------------------
 # 1️⃣ Register Restaurant
 # -------------------------
@@ -45,6 +49,8 @@ def register_restaurant():
         "category": data.get("category"),
         "location": data.get("location"),
         "rating": data.get("rating", 0),
+        "contact": data["contact"],
+        "images": data["images"],
         "active": True,
         "approved": False
     }
@@ -242,36 +248,6 @@ def view_feedback():
     return jsonify(feedback_list), 200
 
 
-# Place Order
-
-@restaurant_bp.route("/api/v1/orders", methods=["POST"])
-def place_order():
-    global order_counter
-
-    data = request.get_json()
-
-    required_fields = ["user_id", "restaurant_id", "dishes"]
-
-    if not data:
-        return jsonify({"error": "Request body required"}), 400
-
-    for field in required_fields:
-        if field not in data:
-            return jsonify({"error": f"{field} is required"}), 400
-
-    order = {
-        "id": order_counter,
-        "user_id": data["user_id"],
-        "restaurant_id": data["restaurant_id"],
-        "dishes": data["dishes"],
-        "status": "Placed"
-    }
-
-    orders.append(order)
-    order_counter += 1
-
-    return jsonify(order), 201
-
 # -------------------------
 # 1️⃣2️⃣ Admin View Order Status
 # -------------------------
@@ -376,8 +352,9 @@ def search_restaurants():
 
     return jsonify(results), 200
 
+
 # -------------------------
-# 1️⃣5️⃣ Place Order
+# 1️⃣4️⃣ Place Order
 # -------------------------
 @restaurant_bp.route("/api/v1/orders", methods=["POST"])
 def place_order():
@@ -385,6 +362,7 @@ def place_order():
 
     data = request.get_json()
 
+    # ✅ Validate request body
     if not data:
         return jsonify({"error": "Request body required"}), 400
 
@@ -403,11 +381,12 @@ def place_order():
     if not user:
         return jsonify({"error": "User not found"}), 400
 
-    # ✅ Validate restaurant exists & active & approved
+    # ✅ Validate restaurant exists
     restaurant = next((r for r in restaurants if r["id"] == restaurant_id), None)
     if not restaurant:
         return jsonify({"error": "Restaurant not found"}), 400
 
+    # ✅ Check restaurant active & approved
     if not restaurant["active"] or not restaurant["approved"]:
         return jsonify({"error": "Restaurant not available"}), 400
 
@@ -427,7 +406,12 @@ def place_order():
         if not dish:
             return jsonify({"error": f"Dish {dish_id} not available"}), 400
 
-        order_dishes.append(dish)
+        order_dishes.append({
+            "id": dish["id"],
+            "name": dish["name"],
+            "price": dish["price"]
+        })
+
         total_amount += dish["price"]
 
     # ✅ Create Order
@@ -444,3 +428,104 @@ def place_order():
     order_counter += 1
 
     return jsonify(order), 201
+
+
+# -------------------------
+# 1️⃣4️⃣ Give Rating
+# -------------------------
+@restaurant_bp.route("/api/v1/ratings", methods=["POST"])
+def give_rating():
+    global rating_counter
+
+    data = request.get_json()
+
+    required_fields = ["order_id", "rating", "comment"]
+
+    if not data:
+        return jsonify({"error": "Request body required"}), 400
+
+    for field in required_fields:
+        if field not in data:
+            return jsonify({"error": f"{field} is required"}), 400
+
+    # Validate rating value
+    try:
+        rating_value = float(data["rating"])
+        if rating_value < 1 or rating_value > 5:
+            return jsonify({"error": "Rating must be between 1 and 5"}), 400
+    except ValueError:
+        return jsonify({"error": "Invalid rating value"}), 400
+
+    # Check if order exists
+    order = next((o for o in orders if o["id"] == data["order_id"]), None)
+
+    if not order:
+        return jsonify({"error": "Order not found"}), 400
+
+    rating_obj = {
+        "id": rating_counter,
+        "order_id": data["order_id"],
+        "restaurant_id": order["restaurant_id"],
+        "rating": rating_value,
+        "comment": data["comment"]
+    }
+
+    ratings.append(rating_obj)
+    rating_counter += 1
+
+    # 🔥 Update restaurant average rating
+    restaurant = next(
+        (r for r in restaurants if r["id"] == order["restaurant_id"]),
+        None
+    )
+
+    if restaurant:
+        restaurant_ratings = [
+            r["rating"] for r in ratings
+            if r["restaurant_id"] == restaurant["id"]
+        ]
+        restaurant["rating"] = round(
+            sum(restaurant_ratings) / len(restaurant_ratings), 2
+        )
+
+    return jsonify(rating_obj), 201
+
+
+# -------------------------
+#  View Orders by Restaurant
+# -------------------------
+@restaurant_bp.route("/api/v1/restaurants/<int:restaurant_id>/orders", methods=["GET"])
+def view_orders_by_restaurant(restaurant_id):
+
+    # Check restaurant exists
+    restaurant = next((r for r in restaurants if r["id"] == restaurant_id), None)
+
+    if not restaurant:
+        return jsonify({"error": "Restaurant not found"}), 404
+
+    # Filter orders by restaurant_id
+    restaurant_orders = [
+        order for order in orders
+        if order["restaurant_id"] == restaurant_id
+    ]
+
+    return jsonify(restaurant_orders), 200
+
+# -------------------------
+# View Orders by User
+# -------------------------
+@restaurant_bp.route("/api/v1/users/<int:user_id>/orders", methods=["GET"])
+def view_orders_by_user(user_id):
+
+    # Check user exists
+    user = next((u for u in users if u["id"] == user_id), None)
+    if not user:
+        return jsonify({"error": "User not found"}), 404
+
+    # Get orders for this user
+    user_orders = [
+        order for order in orders
+        if order["user_id"] == user_id
+    ]
+
+    return jsonify(user_orders), 200
