@@ -134,7 +134,7 @@ def add_dish(restaurant_id):
         "restaurant_id": restaurant_id,
         "name": data["name"],
         "type": data["type"],
-        "price": data["price"],
+        "price": int(data["price"]),
         "available_time": data["available_time"],
         "image": data["image"],
         "enabled": True
