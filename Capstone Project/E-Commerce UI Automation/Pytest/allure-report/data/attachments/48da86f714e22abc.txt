@@ -1,0 +1,24 @@
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:25 ===== Starting Complete User Journey Test =====
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:28 Clicking Register
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:35 Generated email: user_ae0f8bc5-7106-4c15-adf4-c142718e95dd@test.com
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:37 Registering new user
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:47 Registration successful
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:50 Logging out after registration
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:54 Clicking Login
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:58 Logging in with registered credentials
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:62 Login successful
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:65 Searching product: Blue and green Sneaker
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:70 Search results displayed
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:73 Opening first product from results
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:80 Product title and price verified
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:83 Adding product to cart
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:87 Product added to cart successfully
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:90 Navigating to cart
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:95 Updating cart quantity to 1
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:99 Cart quantity updated successfully
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:102 Removing item from cart
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:106 Cart is empty after removal
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:109 Logging out
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:113 Validating session by accessing customer info page
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:120 Session validation successful
+[32mINFO    [0m test_complete_user_journey[Sana_Blue and green Sneaker]:test_complete_user_journey.py:122 ===== Test Completed Successfully =====

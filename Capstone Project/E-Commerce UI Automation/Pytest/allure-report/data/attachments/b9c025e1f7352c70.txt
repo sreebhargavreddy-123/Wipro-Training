@@ -1,0 +1,8 @@
+[32mINFO    [0m test_complete_user_journey[ROHITH_]:test_complete_user_journey.py:25 ===== Starting Complete User Journey Test =====
+[32mINFO    [0m test_complete_user_journey[ROHITH_]:test_complete_user_journey.py:28 Clicking Register
+[32mINFO    [0m test_complete_user_journey[ROHITH_]:test_complete_user_journey.py:35 Generated email: user_f0c7f703-7eba-422e-ad16-cd4c580ac1c6@test.com
+[32mINFO    [0m test_complete_user_journey[ROHITH_]:test_complete_user_journey.py:37 Registering new user
+[32mINFO    [0m test_complete_user_journey[ROHITH_]:test_complete_user_journey.py:47 Registration successful
+[32mINFO    [0m test_complete_user_journey[ROHITH_]:test_complete_user_journey.py:50 Logging out after registration
+[32mINFO    [0m test_complete_user_journey[ROHITH_]:test_complete_user_journey.py:54 Clicking Login
+[32mINFO    [0m test_complete_user_journey[ROHITH_]:test_complete_user_journey.py:58 Logging in with registered credentials
