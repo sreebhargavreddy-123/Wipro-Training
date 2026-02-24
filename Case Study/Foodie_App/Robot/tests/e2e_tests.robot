@@ -11,3 +11,4 @@ End To End Foodie Flow
     Register User
     Place Order
     View Orders By User
+    Add Rating

@@ -1,5 +1,5 @@
 from flask import Flask
-from routes.restaurant_routes import restaurant_bp
+from tests.test_restaurant_api import restaurant_bp
 
 app = Flask(__name__)
 app.register_blueprint(restaurant_bp)
