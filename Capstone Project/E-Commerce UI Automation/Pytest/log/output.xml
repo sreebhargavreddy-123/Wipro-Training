@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.5 on win32)" generated="2026-02-18T11:48:05.314318" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Complete User Journey" source="C:\Users\dbhar\Desktop\Project\Robot\tests\test_complete_user_journey.robot">
+<kw name="Open Browser To Application" owner="browser" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-18T11:48:05.893881" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-18T11:48:05.892875" elapsed="8.947266"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-18T11:48:14.840141" elapsed="0.172746"/>
+</kw>
+<status status="PASS" start="2026-02-18T11:48:05.891856" elapsed="9.122030"/>
+</kw>
+<test id="s1-t1" name="User Journey Using CSV Data" line="21">
+<status status="FAIL" start="2026-02-18T11:48:15.013886" elapsed="0.003036">Test cannot be empty.</status>
+</test>
+<kw name="Close Application Browser" owner="browser" type="TEARDOWN">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<msg time="2026-02-18T11:48:15.030095" level="FAIL">Keyword 'Run Keyword If Test Failed' can only be used in test teardown.</msg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="FAIL" start="2026-02-18T11:48:15.027064" elapsed="0.004032">Keyword 'Run Keyword If Test Failed' can only be used in test teardown.</status>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-02-18T11:48:15.031606" elapsed="2.333142"/>
+</kw>
+<status status="FAIL" start="2026-02-18T11:48:15.026534" elapsed="2.338214">Keyword 'Run Keyword If Test Failed' can only be used in test teardown.</status>
+</kw>
+<status status="FAIL" start="2026-02-18T11:48:05.364219" elapsed="12.000529">Suite teardown failed:
+Keyword 'Run Keyword If Test Failed' can only be used in test teardown.</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Complete User Journey" id="s1" pass="0" fail="1" skip="0">Test Complete User Journey</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-18T11:48:05.880134" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\dbhar\Desktop\Project\Robot\tests\test_complete_user_journey.robot", line 0</msg>
+<msg time="2026-02-18T11:48:05.889006" level="ERROR">In source file:
+  File "C:\Users\dbhar\Desktop\Project\Robot\tests\..\data\users.csv", line 0</msg>
+<msg time="2026-02-18T11:48:05.890335" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: ValueError: Unassigned requiered argument detected: ${first_name}.</msg>
+</errors>
+</robot>
